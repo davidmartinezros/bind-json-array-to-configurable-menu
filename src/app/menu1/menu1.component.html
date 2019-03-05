@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <li><a href="https://davidmartinezros.com" class="active" target="_blank">Home</a></li>
+    <li *ngFor="let d of menu | async"> 
+        <a [href]="d.link" target="_blank">{{ d.title }}</a>
+    </li>
+    <li style="float:right"><a href="https://es.linkedin.com/in/davidmartinezros" class="active" target="_blank">About</a></li>
+  </ul>
+</div>

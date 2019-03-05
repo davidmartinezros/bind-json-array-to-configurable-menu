@@ -4,15 +4,8 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-<h3>Here is the link to the configurable menu json file: <a href="./assets/data/configurable-menu.json" target="_blank">configurable-menu.json</a></h3>
-<h5>You can import this example from here and just change the ul and li styles and the configurable-menu.json file like you want.</h5>
-<div>
-  <ul>
-    <li><a href="https://davidmartinezros.com" class="active" target="_blank">Home</a></li>
-    <li *ngFor="let d of data | async"> 
-        <a [href]="d.link" target="_blank">{{ d.title }}</a>
-    </li>
-    <li style="float:right"><a href="https://es.linkedin.com/in/davidmartinezros" class="active" target="_blank">About</a></li>
-  </ul>
-</div>
+<h3>You can find the source code in my <a href="https://github.com/davidmartinezros/bind-json-array-to-configurable-menu" target="_blank">git repository</a>.</h3>
+
+
+<app-load></app-load>
 

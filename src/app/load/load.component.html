@@ -1,0 +1,12 @@
+<div>
+  <ul>
+      <li>Load the file for change the menu options <input type="file" (change)="onChange($event)"/></li>
+      <li>Example json file <a href="./assets/data/configurable-menu.json" target="_blank">download here</a></li>
+  </ul>
+</div>
+
+<h3>Menu 1:</h3>
+<app-menu1 [(menu)]="menu"></app-menu1>
+
+<h3>Menu 2:</h3>
+<app-menu2 [(menu)]="menu"></app-menu2>

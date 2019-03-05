@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ReturnJsonArrayService } from './return-json-array.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
 
-  title = 'bind-json-array-to-configurable-menu';
+  title = "bind-json-array-to-configurable-menu by David Martinez Ros";
 
-  data: Observable<Array<any>>;
-
-  constructor(private service: ReturnJsonArrayService) {
-    this.data = service.getMenu();
-    console.log("AppComponent.data:" + this.data);
+  constructor() {
   }
 
 }

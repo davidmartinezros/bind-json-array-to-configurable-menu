@@ -10,9 +10,9 @@ export class ReturnJsonArrayService {
 
   constructor(private http: HttpClient) {}
 
-  getMenu(): Observable<any> {
+  getMenu(url: string): Observable<any> {
 
-    return this.http.get<any[]>('./assets/data/configurable-menu.json')
+    return this.http.get<any[]>(url)
       .pipe(
         catchError(this.handleError('getMenu', []))
       );
