@@ -26,7 +26,7 @@ export class LoadComponent implements OnInit {
   }
 
   loadFile() {
-    this.menu = this.service.getMenu('../assets/data/configurable-menu.json');
+    this.menu = this.service.getMenu('../bind-json-array-to-configurable-menu/assets/data/configurable-menu.json');
   }
 
   onChange(event) {
@@ -39,7 +39,7 @@ export class LoadComponent implements OnInit {
     if(file != null) {
       url = URL.createObjectURL(file);
     } else {
-      url = './assets/data/tree.json';
+      url = './Angular7/bind-json-array-to-configurable-menu/assets/data/tree.json';
     }
     console.log('url:' + url);
     if(url != null) {
