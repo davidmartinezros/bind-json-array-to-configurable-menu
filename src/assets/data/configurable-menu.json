@@ -15,7 +15,15 @@
         "id": "3",
         "title": "Chatbot Myyme",
         "type": "Project",
-        "link": "https://davidmartinezros.com/Angular5/chatbot-myyme/"
+        "link": "https://davidmartinezros.com/Angular5/chatbot-myyme/",
+        "childs": [
+            {
+                "id": "3.1",
+                "title": "Link 3.1",
+                "type": "Subproject",
+                "link": "https://www.google.es"
+            }
+        ]
     },
     {
         "id": "4",

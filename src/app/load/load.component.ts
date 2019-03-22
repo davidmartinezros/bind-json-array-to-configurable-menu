@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ReturnJsonArrayService } from '../return-json-array.service';
 import { MenuOption } from '../MenuOption.class';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-load',
@@ -18,7 +19,6 @@ export class LoadComponent implements OnInit {
   constructor(private service: ReturnJsonArrayService) {
     this.loadFile();
     console.log("AppComponent.data:" + this.menu);
-    debugger;
   }
 
   ngOnInit() {
@@ -26,7 +26,7 @@ export class LoadComponent implements OnInit {
   }
 
   loadFile() {
-    this.menu = this.service.getMenu('../bind-json-array-to-configurable-menu/assets/data/configurable-menu.json');
+    this.menu = this.service.getMenu('..' + environment.directory + '/assets/data/configurable-menu.json');
   }
 
   onChange(event) {
@@ -39,7 +39,7 @@ export class LoadComponent implements OnInit {
     if(file != null) {
       url = URL.createObjectURL(file);
     } else {
-      url = './Angular7/bind-json-array-to-configurable-menu/assets/data/tree.json';
+      url = '.' + environment.directory + '/assets/data/tree.json';
     }
     console.log('url:' + url);
     if(url != null) {

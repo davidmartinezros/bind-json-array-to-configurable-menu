@@ -12,7 +12,6 @@ export class Menu1Component implements OnInit {
   @Input() menu: Observable<Array<MenuOption>>;
 
   constructor() {
-    debugger;
     console.log("AppComponent.data:" + this.menu);
   }
 

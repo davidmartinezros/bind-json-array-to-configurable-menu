@@ -1,0 +1,9 @@
+<nav class="nav">
+  <ul class="nav-list">
+    <li class="nav-item"><a href="https://davidmartinezros.com" class="active" target="_blank">Home</a></li>
+    <li class="nav-item" *ngFor="let d of menu | async"> 
+        <a [href]="d.link" target="_blank">{{ d.title }}</a>
+    </li>
+    <li class="nav-item" style="float:right"><a href="https://es.linkedin.com/in/davidmartinezros" class="active" target="_blank">About</a></li>
+  </ul>
+</nav>

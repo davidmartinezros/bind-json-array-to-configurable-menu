@@ -3,11 +3,11 @@ import { Observable } from 'rxjs';
 import { MenuOption } from '../MenuOption.class';
 
 @Component({
-  selector: 'app-menu2',
-  templateUrl: './menu2.component.html',
-  styleUrls: ['./menu2.component.css']
+  selector: 'app-menu4',
+  templateUrl: './menu4.component.html',
+  styleUrls: ['./menu4.component.css']
 })
-export class Menu2Component implements OnInit {
+export class Menu4Component implements OnInit {
   
   @Input() menu: Observable<Array<MenuOption>>;
 
@@ -16,7 +16,6 @@ export class Menu2Component implements OnInit {
   }
 
   ngOnInit() {
-
   }
 
 }
